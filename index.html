@@ -1,78 +1,52 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #6a11cb, #2575fc);
-            color: white;
-            text-align: center;
-        }
-
-        .container {
-            margin-top: 100px;
-        }
-
-        img {
-            width: 120px;
-            border-radius: 50%;
-        }
-
-        h1 {
-            margin: 10px 0;
-        }
-
-        p {
-            font-size: 18px;
-        }
-
-        .links a {
-            display: block;
-            margin: 10px auto;
-            padding: 12px;
-            width: 220px;
-            background: white;
-            color: black;
-            text-decoration: none;
-            border-radius: 25px;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-
-        .links a:hover {
-            background: #ddd;
-            transform: scale(1.05);
-        }
-    </style>
+    <title>Tejas Sorte | Data Scientist Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
+<body class="bg-[#020617] text-slate-100 font-['Inter']">
 
-<body>
-
-    <div class="container">
-        <!-- Profile Image -->
-        <img src="https://via.placeholder.com/120" alt="Profile">
-
-        <!-- Name -->
-        <h1>Your Name</h1>
-
-        <!-- Bio -->
-        <p>Welcome to my page 🚀</p>
-
-        <!-- Links -->
-        <div class="links">
-            <a href="#" target="_blank">My Portfolio</a>
-            <a href="https://instagram.com" target="_blank">Instagram</a>
-            <a href="https://youtube.com" target="_blank">YouTube</a>
-            <a href="mailto:youremail@gmail.com">Contact Me</a>
+    <section class="min-h-screen flex flex-col justify-center items-center text-center px-6">
+        <h1 class="font-['Poppins'] text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">
+            Tejas Sorte [cite: 1]
+        </h1>
+        <p class="text-xl md:text-2xl text-slate-400 max-w-2xl">
+            Bridging the Gap Between Research and Scalable AI. [cite: 3]
+        </p>
+        <div class="mt-8 flex gap-4">
+            <a href="mailto:sortetejas234@gmail.com" class="px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-full font-semibold transition">Contact Me</a>
+            <a href="#projects" class="px-6 py-3 border border-slate-700 hover:bg-slate-800 rounded-full font-semibold transition">View Projects</a>
         </div>
-    </div>
+    </section>
 
+    <section class="max-w-5xl mx-auto py-20 px-6">
+        <h2 class="font-['Poppins'] text-3xl font-bold mb-12 text-blue-400">Experience</h2>
+        <div class="glass-card p-8 rounded-2xl border border-white/10 bg-white/5">
+            <div class="flex justify-between items-start mb-4">
+                <div>
+                    <h3 class="text-2xl font-bold">Scholar ML [cite: 10]</h3>
+                    <p class="text-blue-400">Data Scientist [cite: 11]</p>
+                </div>
+                <span class="text-slate-500">April 2024 - Present [cite: 12]</span>
+            </div>
+            <ul class="list-disc list-inside space-y-2 text-slate-300">
+                <li>Translating research papers into practical implementations using Python. [cite: 13]</li>
+                <li>Building end-to-end ML pipelines across CV, NLP, and Generative AI. [cite: 14]</li>
+                <li>Developing research-driven ML/DL solutions. [cite: 13]</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects" class="max-w-5xl mx-auto py-20 px-6">
+        <h2 class="font-['Poppins'] text-3xl font-bold mb-12">Featured Work</h2>
+        <div class="grid md:grid-cols-2 gap-8" id="project-container">
+            </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
-```
