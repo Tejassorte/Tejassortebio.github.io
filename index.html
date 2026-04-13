@@ -3,50 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tejas Sorte | Data Scientist Portfolio</title>
+    <title>Tejas Sorte | Data Scientist</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700&family=Roboto+Mono&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        html { scroll-behavior: smooth; }
+        .glass-card {
+            backdrop-filter: blur(12px);
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .glass-card:hover {
+            border-color: rgba(59, 130, 246, 0.5);
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+        /* Animated Background Blob */
+        .blob {
+            position: fixed;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 70%);
+            border-radius: 50%;
+            z-index: -1;
+            filter: blur(60px);
+            animation: move 20s infinite alternate;
+        }
+        @keyframes move {
+            from { transform: translate(-10%, -10%); }
+            to { transform: translate(20%, 20%); }
+        }
+    </style>
 </head>
-<body class="bg-[#020617] text-slate-100 font-['Inter']">
+<body class="bg-[#020617] text-slate-100 font-['Inter'] selection:bg-blue-500/30 overflow-x-hidden">
+    <div class="blob"></div>
 
-    <section class="min-h-screen flex flex-col justify-center items-center text-center px-6">
-        <h1 class="font-['Poppins'] text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">
-            Tejas Sorte [cite: 1]
-        </h1>
-        <p class="text-xl md:text-2xl text-slate-400 max-w-2xl">
-            Bridging the Gap Between Research and Scalable AI. [cite: 3]
-        </p>
-        <div class="mt-8 flex gap-4">
-            <a href="mailto:sortetejas234@gmail.com" class="px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-full font-semibold transition">Contact Me</a>
-            <a href="#projects" class="px-6 py-3 border border-slate-700 hover:bg-slate-800 rounded-full font-semibold transition">View Projects</a>
+    <section class="h-screen flex flex-col justify-center items-center px-6 text-center">
+        <div data-aos="fade-up" data-aos-duration="1000">
+            <h1 class="font-['Poppins'] text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+                Tejas Sorte [cite: 1]
+            </h1>
+            <p class="text-xl text-slate-400 max-w-2xl leading-relaxed mx-auto">
+                Data Scientist specializing in ML, DL, and Generative AI solutions. [cite: 2] 
+                Currently building at Scholar ML. [cite: 10, 11]
+            </p>
+            <div class="mt-10 flex gap-4 justify-center">
+                <a href="mailto:sortetejas234@gmail.com" class="px-8 py-3 bg-blue-600 rounded-full font-semibold hover:bg-blue-700 transition transform hover:scale-105 active:scale-95">Get In Touch</a>
+                <a href="#projects" class="px-8 py-3 border border-slate-700 rounded-full font-semibold hover:bg-slate-800 transition transform hover:scale-105 active:scale-95">View Work</a>
+            </div>
         </div>
     </section>
 
-    <section class="max-w-5xl mx-auto py-20 px-6">
-        <h2 class="font-['Poppins'] text-3xl font-bold mb-12 text-blue-400">Experience</h2>
-        <div class="glass-card p-8 rounded-2xl border border-white/10 bg-white/5">
-            <div class="flex justify-between items-start mb-4">
-                <div>
-                    <h3 class="text-2xl font-bold">Scholar ML [cite: 10]</h3>
-                    <p class="text-blue-400">Data Scientist [cite: 11]</p>
-                </div>
-                <span class="text-slate-500">April 2024 - Present [cite: 12]</span>
+    <section class="max-w-4xl mx-auto py-20 px-6">
+        <h2 data-aos="fade-right" class="font-['Poppins'] text-3xl font-bold mb-10 text-blue-400 text-center">Work Experience [cite: 9]</h2>
+        <div data-aos="zoom-in-up" class="glass-card p-8 rounded-2xl">
+            <div class="flex flex-col md:flex-row justify-between mb-4">
+                <h3 class="text-2xl font-bold">Scholar ML [cite: 10]</h3>
+                <span class="text-slate-500 font-mono">April 2024 — Present [cite: 12]</span>
             </div>
-            <ul class="list-disc list-inside space-y-2 text-slate-300">
-                <li>Translating research papers into practical implementations using Python. [cite: 13]</li>
-                <li>Building end-to-end ML pipelines across CV, NLP, and Generative AI. [cite: 14]</li>
-                <li>Developing research-driven ML/DL solutions. [cite: 13]</li>
+            <p class="text-blue-400 font-medium mb-4">Data Scientist [cite: 11]</p>
+            <ul class="space-y-3 text-slate-300">
+                <li class="flex gap-2"><span>•</span> Translating research papers into practical implementations using Python. [cite: 13]</li>
+                <li class="flex gap-2"><span>•</span> Building end-to-end ML, CV, NLP, and GenAI pipelines. [cite: 14]</li>
+                <li class="flex gap-2"><span>•</span> Conducting algorithm analysis and real-world performance optimization. [cite: 15]</li>
             </ul>
         </div>
     </section>
 
-    <section id="projects" class="max-w-5xl mx-auto py-20 px-6">
-        <h2 class="font-['Poppins'] text-3xl font-bold mb-12">Featured Work</h2>
-        <div class="grid md:grid-cols-2 gap-8" id="project-container">
+    <section id="projects" class="max-w-6xl mx-auto py-20 px-6">
+        <h2 data-aos="fade-up" class="font-['Poppins'] text-3xl font-bold mb-12 text-center">Key Projects [cite: 27]</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="project-list">
             </div>
     </section>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
+    <script>
+        AOS.init({
+            once: true, // Animations happen only once while scrolling down
+            duration: 800,
+            offset: 100
+        });
+    </script>
 </body>
 </html>
